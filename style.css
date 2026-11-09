@@ -1,0 +1,110 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/fundo.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+ul {
+  float: left;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: .5 ease;
+}
+ul li a:hover {
+  background-color: whitesmoke;
+  color: rgb(97, 7, 7);
+  border-radius: 5px;
+  font-weight: bolder;
+}
+ul li.ativo a {
+  background-color: whitesmoke;
+  color: rgb(97, 7, 7);
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.logo img {
+  float: left;
+  width: 130px;
+  height: auto;
+}
+.main {
+  margin: auto;
+}
+.titulo {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.titulo h1 {
+  color: whitesmoke;
+  font-size: 49.7px;
+}
+.botao {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.bto {
+  border: 1px solid rgb(97, 7, 7);
+  padding: 5px 20px;
+  color: whitesmoke;
+  transition: 0.5 ease;
+  font-size: 23px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 2px;
+}
+.bto:hover {
+  background-color: rgb(97, 7, 7);
+  border-radius: 5px;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+.sub-menu {
+  display: none;
+  top: 6%;
+  position: relative;
+}
+.sub-menu ul {
+  position: absolute;
+}
+.main ul li:hover .sub-menu {
+  display: block;
+  background-color: whitesmoke;
+  margin-top: 12px;
+  margin-left: -8px;
+  
+}
+.main ul li:hover .sub-menu ul {
+  display: block;
+  margin: 6px;
+}
+.main ul li:hover .sub-menu ul li {
+  border-bottom: 1px whitesmoke;
+  background: transparent;
+  padding-bottom: 15px;
+  transition: 0.4 ease;
+  text-align: left;
+  border-radius: 5px;
+}
